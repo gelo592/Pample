@@ -1,0 +1,36 @@
+.kerpany-logo img{
+  margin-left: -341px;
+  padding-left: 50%;
+  height: 208px;
+}
+
+.alien-boy {
+  height: 440px;
+}
+.center-row {
+  text-align: center;
+}
+
+.alien-adventures-txt {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.alien-adventures-txt img{
+  width: 350px;
+  //transform: rotate(-15deg);
+}
+
+.center-row.row.mc{
+  margin-left: -200px;
+  padding-left: 50%;
+}
+
+.mc #mc_embed_signup .mc-field-group input {
+  width: 400px;
+}
+
+#footer {
+  text-align: right;
+  padding-right: 20px;
+}
