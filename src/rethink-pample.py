@@ -8,7 +8,7 @@ app = Flask(__name__)
 import rethinkdb as r
 from rethinkdb.errors import RqlRuntimeError, RqlDriverError
 
-RDB_HOST = 'localhost'
+RDB_HOST = '52.24.2.218'
 RDB_PORT = 28015
 RDB_DB = 'pample'
 
