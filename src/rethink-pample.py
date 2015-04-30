@@ -63,4 +63,4 @@ if __name__ == '__main__':
   if args.run_setup:
     itsDBtime()
   else:
-    app.run(host='52.24.2.218', debug=True)
+    app.run(host='0.0.0.0', debug=True)
