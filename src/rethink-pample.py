@@ -43,6 +43,10 @@ def teardown_request(exception):
   except AttributeError:
     pass
 
+@app.route('/')
+def index():
+  return "boop bop"
+
 @app.route('/splash')
 def splash():
   return render_template("splash.html")
