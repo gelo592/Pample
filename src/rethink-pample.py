@@ -214,7 +214,7 @@ if __name__ == '__main__':
   args = parser.parse_args()
   if args.run_setup:
     itsDBtime()
-  else if args.not_a_test:
+  elif args.not_a_test:
     app.secret_key = '7364626^5@7468696/672"7265[161?><><179207365637]6574}420646 secret secret secret 2069&#2!66$1747$65$22?7pp<>86174206920707574206865726530'
     app.run(host='0.0.0.0')
   else:
