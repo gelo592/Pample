@@ -34,3 +34,23 @@
   text-align: right;
   padding-right: 20px;
 }
+
+.btn-image {
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 186px;
+  height: 53px;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  color: rgba(0,0,0,0);
+}
+
+#btn-add {
+  background-image: url(/static/img/alien-boy-add.png);
+}
+
+#btn-login {
+  background-image: url(/static/img/login.png)
+}
