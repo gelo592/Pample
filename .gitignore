@@ -41,9 +41,11 @@ pip-delete-this-directory.txt
 # RethinkDB stuff:
 /**/rethinkdb_data
 /**/rethinkdb_metadata
+
 *.db
+
 venv
 
-configgypudding.prod.py
+configgypuddin.py
 
 

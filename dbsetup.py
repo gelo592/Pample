@@ -28,7 +28,7 @@ def itsDBtime():
 @app.before_request
 def before_request():
   try:
-    g.rdb_conn = r.connect(host=RDB_HOST, port=RDB_PORT, db=RDB_DB)
+    g.conn = r.connect(host=RDB_HOST, port=RDB_PORT, db=RDB_DB)
   except RqlDriverError:
     abort(503, "No database connection could be established.")
 
@@ -36,6 +36,6 @@ def before_request():
 @app.teardown_request
 def teardown_request(exception):
   try:
-    g.rdb_conn.close()
+    g.conn.close()
   except AttributeError:
     pass

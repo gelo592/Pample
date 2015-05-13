@@ -1,23 +1,46 @@
 from app import db
 from flask.ext.security import UserMixin, RoleMixin
-from peewee import CharField, TextField, BooleanField, \
-    DateTimeField, ForeignKeyField
 
-class Role(db.Model, RoleMixin):
-  name = CharField(unique=True)
-  description = TextField(null=True)
+class Role(RoleMixin):
+  name = None
+  description = None
+  table = 'roles'
+  id = None
 
-class User(db.Model, UserMixin):
-  email = TextField(unique=True)
-  password = TextField()
-  active = BooleanField(default=True)
-  confirmed_at = DateTimeField(null=True)
+  def __init__(self, name, description):
+    self.name = name
+    self.description = description
 
-class UserRoles(db.Model):
-  # Because peewee does not come with built-in many-to-many
-  # relationships, we need this intermediary class to link
-  # user to roles.
-  user = ForeignKeyField(User, related_name='roles')
-  role = ForeignKeyField(Role, related_name='users')
-  name = property(lambda self: self.role.name)
-  description = property(lambda self: self.role.description)
+  def serialize(self, has_id):
+    if has_id:
+      return {"name": self.name, "description": self.description, "id": self.id}
+    else:
+      return {"name": self.name, "description": self.description}
+
+class User(UserMixin):
+  email = None
+  password = None
+  active = True
+  confirmed_at = None
+  table = 'users'
+  roles = []
+  id = None
+
+  def __init__(self, email, password, active, roles):
+    if not self.validate(email, password): raise ValueError
+    self.email = email
+    self.password = password
+    self.active = active
+    self.roles = roles
+
+  def serialize(self, has_id):
+    if has_id:
+      return {"email": self.email, "password": self.password, "is_active": self.active, "roles": self.roles, "id": self.id}
+    else:
+      return {"email": self.email, "password": self.password, "is_active": self.active, "roles": self.roles}
+
+
+  def validate(self, email, password):
+    #check email is unique
+    #check password is 'strong'
+    return True
