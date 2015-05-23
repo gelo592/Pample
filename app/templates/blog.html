@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>list of X best things do do Blah: an attempt to build a a web game for language learning</h1>
+  <h4>Starting at the base</h4>
+
+{% endblock %}
+
+
+my goal throughout this project has been to try and get a proof of concept out to the world as quickly as possibly.
+though i want to use the most apt tech at each level, over-engineering is a time suck and generally wasteful knowing the
+future will probably hold many changes no matter how perfect something seems to be today.
+
+first up, picking my database.
+  my rough process:
+    NoSQl or SQL? welp i don't really feel like learning or dealing with SQL syntax. plus, the rigid format of sql tables
+    is daunting when my schema is changing every four minutes when i realize another column i forgot to include originally.
+    okay, nosql it is then. Firebase? i have used this before so i could whip up an api pretty quickly. but did i like it?
+    it was maybe a little too far from sql without great filtering. maybe i wasn't using it to the best of it's capabilities,
+    but i felt like i was always pulling way more data than i needed and doing a lot of processing on the clientside (dragggg).
+    databases i haven't used: mongodb vs rethinkdb
+    honestly i pretty much just flipped a coin here. i was told that rethink was easy to get up and opperable quickly. beyond
+    that i didn't need much convincing. i was bored of looking and the 'quickstart' was easy enough to follow.
+voilà my database was born.
+
+since picking rethink i have gathered some pros and cons.
+pros:
+  the data console is handy. and the 'tool tips' that come with the suggested commands are super useful.
+cons:
+  some things are missing. i know rethink is meant to just be a blobby store, but since you can access 'tables'
+  it follows that there would be some sorta of json schema checking included. which i sorely have been missing.
+  it looked like there was some node module if you are using javascript. but i went with python so no such luck
+  for me.
+
+
+
+
+impactjs vs craftyjs vs atomicengine
+there are about a billion options for game engines
+
+impact is moolah, the tutorial did make it enticing though. just wich i could try before i buy
+atomic is 'early access'
+giving crafty a try
+
+also looked at:
+  gamemaker: looks like it isn't being maintained anymore (though i like the ide)
+    the mac version is pretty poo though and the windows version on parallels is crashing (probs my fault for running on parallels)
+    finally the first sample game i tried to make wouldn't compile
+  unity:
+    seems pretty solid might come back to this
+  unreal:
+    paper2d seems cool, but since this is really meant for 3d gonna pass
+  construct2:
+    got a working thing up very quickly. seems reasonable. only windows, but don't need licence for now (and they are relatively cheap)
+    not a bad ide either
+

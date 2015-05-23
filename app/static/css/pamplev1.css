@@ -1,0 +1,91 @@
+#content {
+  text-align: center;
+  background: #454545; }
+
+.kerpany-logo img {
+  margin-left: -341px;
+  padding-left: 50%;
+  height: 208px; }
+
+.alien-boy {
+  height: 440px; }
+
+.center-row {
+  text-align: center; }
+
+.alien-adventures-txt {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
+.alien-adventures-txt img {
+  width: 300px; }
+
+.center-row.row.mc {
+  margin-left: -200px;
+  padding-left: 50%; }
+
+.mc #mc_embed_signup .mc-field-group input {
+  width: 400px; }
+
+#footer {
+  text-align: right;
+  padding-right: 20px; }
+
+.btn-image {
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 186px;
+  height: 53px;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  color: transparent; }
+
+#btn-add {
+  background-image: url(/static/img/alien-boy-add.png); }
+
+#btn-login {
+  background-image: url(/static/img/login.png); }
+
+.secret-login {
+  position: absolute;
+  top: 20px;
+  right: 62px; }
+  .secret-login .star-outer {
+    position: absolute;
+    left: 0px;
+    color: #f5b715;
+    z-index: 1;
+    font-size: 32px; }
+  .secret-login .star-inner {
+    position: absolute;
+    font-size: 32px;
+    color: #ffeb1e; }
+
+.secret-login:hover {
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation: star-wiggle 2s; }
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #454545;
+  border: solid 12px #454545;
+  color: #eee; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      display: inline-block; }
+  .footer .dashy-info {
+    width: 250px;
+    display: inline-block; }
+  .footer .dashy-input {
+    display: inline; }
+    .footer .dashy-input input {
+      width: 400px; }
+  .footer .dashy-settings {
+    display: inline-block; }
+
+/*# sourceMappingURL=pamplev1.css.map */

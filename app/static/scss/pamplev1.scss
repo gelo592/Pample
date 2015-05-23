@@ -1,3 +1,8 @@
+#content {
+  text-align: center;
+  background: #454545;
+}
+
 .kerpany-logo img{
   margin-left: -341px;
   padding-left: 50%;
@@ -59,6 +64,19 @@
   position: absolute;
   top: 20px;
   right: 62px;
+  .star-outer {
+    position: absolute;
+    left: 0px;
+    color: rgb(245, 183, 21);
+    z-index: 1;
+    font-size: 32px;
+  }
+
+  .star-inner {
+    position: absolute;
+    font-size: 32px;
+    color: rgb(255, 235, 30);
+  }
 }
 
 .secret-login:hover {
@@ -70,72 +88,35 @@
   //animation: star-wiggle 2s;
 }
 
-.secret-login .star-outer {
-  position: absolute;
-  left: 0px;
-  color: rgb(245, 183, 21);
-  z-index: 1;
-  font-size: 32px;
-}
 
-.secret-login .star-inner {
-  position: absolute;
-  font-size: 32px;
-  color: rgb(255, 235, 30);
-}
 
-@-webkit-keyframes star-wiggle {
-  0% {
-    -webkit-transform: rotate(0deg);
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #454545;
+  border: solid 12px #454545;
+  color: #eee;
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
   }
-  50% {
-    -webkit-transform: rotate(30deg);
+  .dashy-info {
+    width: 250px;
+    display: inline-block;
   }
-  100% {
-    -webkit-transform: rotate(-30deg);
+
+  .dashy-input {
+    display: inline;
+    input {
+      width: 400px;
+    }
   }
-}
-@-moz-keyframes star-wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-60deg);
-  }
-  100% {
-    transform: rotate(30deg);
-  }
-}
-@-o-keyframes star-wiggle {
-  0% {
-    transform: rotate(30deg);
-  }
-  50% {
-    transform: rotate(-60deg);
-  }
-  100% {
-    transform: rotate(30deg);
-  }
-}
-@-ms-keyframes star-wiggle {
-  0% {
-    transform: rotate(30deg);
-  }
-  50% {
-    transform: rotate(-60deg);
-  }
-  100% {
-    transform: rotate(30deg);
-  }
-}
-@keyframes star-wiggle {
-  0% {
-    transform: rotate(30deg);
-  }
-  50% {
-    transform: rotate(-60deg);
-  }
-  100% {
-    transform: rotate(30deg);
+
+  .dashy-settings {
+    display: inline-block;
   }
 }

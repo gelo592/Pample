@@ -1,0 +1,25 @@
+{"name": "gelo592.github.io",
+  "version": "1.0.0",
+  "description": "grace dot cat",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gelo592/gelo592.github.io.git"
+  },
+  "author": "g e link",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gelo592/gelo592.github.io/issues"
+  },
+  "homepage": "https://github.com/gelo592/gelo592.github.io",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.1.0"
+  }
+}
+

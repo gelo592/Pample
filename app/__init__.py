@@ -93,6 +93,10 @@ def index():
 def page_no_exist(path):
   return 'clever 404 for www.kermpany.com/%s' % path
 
+@app.route('/blarg')
+def blarg():
+  return render_template("blog.html")
+
 
 RDB_HOST = 'localhost'
 RDB_PORT = 28015
@@ -100,5 +104,7 @@ RDB_DB = 'pample'
 
 def connection():
   return r.connect(host=RDB_HOST, port=RDB_PORT, db=RDB_DB)
+
+import user.controllers
 
 
