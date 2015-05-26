@@ -67,6 +67,14 @@
   -webkit-transform-origin: 50% 50%;
   -webkit-animation: star-wiggle 2s; }
 
+.speech-bubble {
+  z-index: 10;
+  position: absolute;
+  border-image-source: url("../img/SpeechBubble.png");
+  border-image-slice: 14 19 23 21 fill;
+  border-width: 8px;
+  width: 120px; }
+
 .footer {
   width: 100%;
   position: absolute;
