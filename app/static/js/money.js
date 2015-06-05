@@ -41,7 +41,12 @@ $(function() {
       return;
     }
     else if(newPos == goals.length - 1) {
-      $(".star-six").addClass("full");
+      $(".star").addClass("full");
+      $(".star").attr("src", "static/img/star-full.png");
+    }
+    else {
+      $(".star").removeClass("full");
+      $(".star").attr("src", "static/img/star-empty.png");
     }
 
     $(".progress-bar").data('position', newPos);
