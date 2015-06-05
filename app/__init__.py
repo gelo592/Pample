@@ -97,6 +97,10 @@ def page_no_exist(path):
 def blarg():
   return render_template("blog.html")
 
+@app.route('/moneymoneymoney')
+def moneymoneymoney():
+  return render_template("moneymoneymoney.html")
+
 
 RDB_HOST = 'localhost'
 RDB_PORT = 28015

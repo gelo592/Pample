@@ -8,9 +8,11 @@
     <title>Pample Language Learning Lab</title>
   </head>
   <body>
-    <div id="content">{% block content %}{% endblock %}</div>
+    {% block content %}{% endblock %}
     {% block footer %}
-      <p>&copy; Copyright 2015</p>
+      <div id="footer">
+        <p>&copy; Copyright 2015</p>
+      </div>
     {% endblock %}
     <script type="text/javascript" src="static/libs/jquery-2.1.1/jquery-2.1.1.min.js"></script>
     {% block scripts %}{% endblock %}

@@ -1,131 +1,224 @@
-#content {
-  text-align: center;
-  background: #454545;
-}
-
-.kerpany-logo img{
-  margin-left: -341px;
-  padding-left: 50%;
-  height: 208px;
-}
-
-.alien-boy {
-  height: 440px;
-}
-.center-row {
-  text-align: center;
-}
-
-.alien-adventures-txt {
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
-.alien-adventures-txt img{
-  width: 300px;
-  //transform: rotate(-15deg);
-}
-
-.center-row.row.mc{
-  margin-left: -200px;
-  padding-left: 50%;
-}
-
-.mc #mc_embed_signup .mc-field-group input {
-  width: 400px;
-}
-
 #footer {
   text-align: right;
   padding-right: 20px;
-}
-
-.btn-image {
-  background-repeat: no-repeat;
-  background-position: left top;
-  width: 186px;
-  height: 53px;
-  border: 0px;
-  background-color: transparent;
-  cursor: pointer;
-  outline: 0;
-  color: rgba(0,0,0,0);
-}
-
-#btn-add {
-  background-image: url(/static/img/alien-boy-add.png);
-}
-
-#btn-login {
-  background-image: url(/static/img/login.png)
-}
-
-.secret-login {
   position: absolute;
-  top: 20px;
-  right: 62px;
-  .star-outer {
-    position: absolute;
-    left: 0px;
-    color: rgb(245, 183, 21);
-    z-index: 1;
-    font-size: 32px;
+  bottom: 10px;
+  right: 20px;
+}
+
+.content.splash{
+  .kerpany-logo img{
+    margin-left: -341px;
+    padding-left: 50%;
+    height: 208px;
   }
 
-  .star-inner {
+  .alien-boy {
+    height: 440px;
+  }
+  .center-row {
+    text-align: center;
+  }
+
+  .alien-adventures-txt {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .alien-adventures-txt img{
+    width: 300px;
+    //transform: rotate(-15deg);
+  }
+
+  .center-row.row.mc {
+    margin-left: -200px;
+    padding-left: 50%;
+  }
+
+  .mc #mc_embed_signup .mc-field-group input {
+    width: 400px;
+  }
+
+
+  .btn-image {
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 186px;
+    height: 53px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+    color: rgba(0,0,0,0);
+  }
+
+  #btn-add {
+    background-image: url(/static/img/alien-boy-add.png);
+  }
+
+  #btn-login {
+    background-image: url(/static/img/login.png)
+  }
+
+  .secret-login {
     position: absolute;
-    font-size: 32px;
-    color: rgb(255, 235, 30);
+    top: 20px;
+    right: 62px;
+    .star-outer {
+      position: absolute;
+      left: 0px;
+      color: rgb(245, 183, 21);
+      z-index: 1;
+      font-size: 32px;
+    }
+
+    .star-inner {
+      position: absolute;
+      font-size: 32px;
+      color: rgb(255, 235, 30);
+    }
+  }
+
+  .secret-login:hover {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: star-wiggle 2s;
+    //-moz-animation: star-wiggle 2s;
+    //-o-animation: star-wiggle 2s;
+    //-ms-animation: star-wiggle 2s;
+    //animation: star-wiggle 2s;
   }
 }
 
-.secret-login:hover {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: star-wiggle 2s;
-  //-moz-animation: star-wiggle 2s;
-  //-o-animation: star-wiggle 2s;
-  //-ms-animation: star-wiggle 2s;
-  //animation: star-wiggle 2s;
-}
+.content.pamps {
+  text-align: center;
+  background: #454545;
 
-.speech-bubble {
-  z-index: 10;
-  position: absolute;
-  border-image-source: url('../img/SpeechBubble.png');
-  border-image-slice: 14 19 23 21 fill;
-  border-width: 8px;
-  width: 120px;
-}
+  .speech-bubble {
+    z-index: 10;
+    position: absolute;
+    border-image-source: url('../img/SpeechBubble.png');
+    border-image-slice: 14 19 23 21 fill;
+    border-width: 8px;
+    width: 120px;
+  }
 
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #454545;
+    border: solid 12px #454545;
+    color: #eee;
+    ul {
+      list-style: none;
 
+      li {
+        display: inline-block;
+      }
+    }
+    .dashy-info {
+      width: 250px;
+      display: inline-block;
+    }
 
-.footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: #454545;
-  border: solid 12px #454545;
-  color: #eee;
-  ul {
-    list-style: none;
+    .dashy-input {
+      display: inline;
+      input {
+        width: 400px;
+      }
+    }
 
-    li {
+    .dashy-settings {
       display: inline-block;
     }
   }
-  .dashy-info {
-    width: 250px;
-    display: inline-block;
-  }
+}
 
-  .dashy-input {
-    display: inline;
-    input {
-      width: 400px;
+.content.money {
+  .page-heading {
+    text-align: center;
+  }
+  .page-subtitle {
+    font-size: 16px;
+  }
+  .donation-goals {
+    width: 100%;
+  }
+  .example-image {
+    height: 200px;
+  }
+  .goal-box {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .goal-left {
+    position: absolute;
+    left: 0px;
+    font-size: 24px;
+    padding-top: 88px;
+  }
+  .goal-right {
+    position: absolute;
+    right: 0px;
+    font-size: 24px;
+    padding-top: 88px;
+  }
+  .shape {
+    position: absolute;
+    right: 25px;
+    top: -46px;
+  }
+  .star-six {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #F5F5F5;
+    &.full {
+      border-bottom: 80px solid #428bca;
     }
   }
 
-  .dashy-settings {
-    display: inline-block;
+  .star-six:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 80px solid #F5F5F5;
+    margin: 30px 0 0 -50px;
+  }
+  .star-six.full:after {
+    border-top: 80px solid #428bca;
+  }
+
+  .star-six-border {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-bottom: 82px solid rgba(0,0,0,1);
+    &.full {
+      border-bottom: 80px solid #428bca;
+    }
+  }
+
+  .star-six-border:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-top: 82px solid rgba(0,0,0,1);
+    margin: 30px 0 0 -50px;
+  }
+  .progress {
+    position: relative;
+    overflow: visible;
+    margin-left:  -50px;
   }
 }
