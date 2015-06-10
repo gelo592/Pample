@@ -65,26 +65,27 @@
     border-image-slice: 14 19 23 21 fill;
     border-width: 8px;
     width: 120px; }
-  .content.pamps .footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #454545;
-    border: solid 12px #454545;
-    color: #eee; }
-    .content.pamps .footer ul {
-      list-style: none; }
-      .content.pamps .footer ul li {
-        display: inline-block; }
-    .content.pamps .footer .dashy-info {
-      width: 250px;
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #454545;
+  border: solid 12px #454545;
+  color: #eee; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
       display: inline-block; }
-    .content.pamps .footer .dashy-input {
-      display: inline; }
-      .content.pamps .footer .dashy-input input {
-        width: 400px; }
-    .content.pamps .footer .dashy-settings {
-      display: inline-block; }
+  .footer .dashy-info {
+    width: 250px;
+    display: inline-block; }
+  .footer .dashy-input {
+    display: inline; }
+    .footer .dashy-input input {
+      width: 400px; }
+  .footer .dashy-settings {
+    display: inline-block; }
 
 .content.money .page-heading {
   text-align: center; }

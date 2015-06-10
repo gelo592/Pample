@@ -102,35 +102,37 @@
     width: 120px;
   }
 
-  .footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #454545;
-    border: solid 12px #454545;
-    color: #eee;
-    ul {
-      list-style: none;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #454545;
+  border: solid 12px #454545;
+  color: #eee;
 
-      li {
-        display: inline-block;
-      }
-    }
-    .dashy-info {
-      width: 250px;
+  ul {
+    list-style: none;
+
+    li {
       display: inline-block;
     }
+  }
 
-    .dashy-input {
-      display: inline;
-      input {
-        width: 400px;
-      }
-    }
+  .dashy-info {
+    width: 250px;
+    display: inline-block;
+  }
 
-    .dashy-settings {
-      display: inline-block;
+  .dashy-input {
+    display: inline;
+    input {
+      width: 400px;
     }
+  }
+
+  .dashy-settings {
+    display: inline-block;
   }
 }
 
