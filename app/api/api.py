@@ -1,18 +1,25 @@
-from flask import g
-from app import r
+from flask import g, jsonify, request
+from flask.ext.security import login_required
+from app import r, app
 import unicodedata
 
 def getUser(user_id):
   return r.db('pample').table('users').get(user_id).run(g.conn)
 
-def getLevel(level_id):
-  dertaCursor = r.db('pample').table('levels').filter({'level': level_id}).run(g.conn)
+@login_required
+@app.route('/api/level')
+def getLevel():
+  print "rawwwwrarwrwarwawrawrrrrrrr"
+  level_id = request.args.get('level')
+  print level_id
+  dertaCursor = r.db('pample').table('levels').get_all(int(level_id), index='level').run(g.conn)
+  print dertaCursor
   for derta in dertaCursor:
     print derta
-    derta = deunicodify(derta)
+    #derta = deunicodify(derta)
     print "hi"
-    print derta
-    return derta
+    print jsonify(derta)
+    return jsonify(derta)
 
 def deunicodify(object):
   for key in object.keys():

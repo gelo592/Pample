@@ -83,6 +83,7 @@
   .footer .dashy-input {
     display: inline; }
     .footer .dashy-input input {
+      color: #333;
       width: 400px; }
   .footer .dashy-settings {
     display: inline-block; }
