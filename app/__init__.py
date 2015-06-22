@@ -101,7 +101,6 @@ def blarg():
 def moneymoneymoney():
   return render_template("moneymoneymoney.html")
 
-
 RDB_HOST = 'localhost'
 RDB_PORT = 28015
 RDB_DB = 'pample'
@@ -110,5 +109,5 @@ def connection():
   return r.connect(host=RDB_HOST, port=RDB_PORT, db=RDB_DB)
 
 import user.controllers
-
+import ipa.controllers
 

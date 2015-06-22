@@ -1,0 +1,114 @@
+.sound-wrap {
+  text-align: center;
+}
+
+.speaker {
+  width: 90px;
+  height: 103px;
+  padding: 20px;
+  background-image: url(/static/ipa-learnorator/speaker.png);
+  background-size: 90px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.speaker:hover {
+  cursor: pointer;
+  background-image: url(/static/ipa-learnorator/speaker-hover.png);
+}
+
+.speaker-lil {
+  width: 10px;
+  //padding: 20px;
+}
+
+.speaker-lil:hover {
+  cursor: pointer;
+  color: yellow;
+}
+@font-face {
+    font-family: "Code2000";
+    src: url(CODE2000.ttf) format("truetype");
+}
+
+{
+  font-family: "Code2000", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.engi {
+  color: red;
+}
+
+.keyboard {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.key {
+  display: inline-block;
+  width: 60px;
+  height: 64px;
+  border: 2px solid #333;
+  margin-bottom: 4px
+}
+
+.key-letter {
+  font-size: 28px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.key-touche {
+  font-size: 11px;
+  width: 34px;
+  padding-left: 5px;
+  text-align: left;
+  display: inline-block;
+}
+
+.key-sound {
+  width: 18px;
+  padding-right: 5px;
+  text-align: right;
+  display: inline-block;
+}
+
+.nopekey {
+  background-color: grey;
+}
+
+.special-char {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ipa-chart {
+  width: 800px;
+  margin-left: -100px;
+}
+
+.invisible-word {
+  display: none;
+}
+
+.success, .failure {
+  display: none;
+  margin-top: -20px;
+}
+
+.input-group {
+  padding-bottom: 20px;
+}
+
+.brand {
+  width: 235px;
+  font-size: 26px;
+}
+
+.modal-links > li > a {
+  background-color: white;
+}
+
+.modal-links > li > a:hover {
+  background-color: white;
+}
