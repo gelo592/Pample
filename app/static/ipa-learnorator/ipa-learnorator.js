@@ -204,8 +204,6 @@ ipaPracticizer = {
 
   usedWords: [],
 
-  api_key_shh_dont_show_this_to_anyone: 'a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5',
-
   api_base_url: 'http://api.wordnik.com/v4/word.json/',
 
   loadWord: function(word) {
