@@ -8,6 +8,8 @@ from ..api.api import getUser, getLevel
 @app.route('/pamps')
 def pamps():
   user = getUser(current_user.id)
+  print current_user
+  print user
   level = user["currentLevel"]
   return render_template("pamps.html", level=level, user ="GeeEee")
 

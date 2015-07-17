@@ -54,6 +54,17 @@
 .content.splash .secret-login:hover {
   -webkit-transform-origin: 50% 50%;
   -webkit-animation: star-wiggle 2s; }
+.content.splash .real-fo .col-sm-12:nth-child(2n+1) {
+  background-color: #A5D3E0; }
+.content.splash .chev-hook {
+  text-align: center;
+  font-size: 24px; }
+.content.splash .chev-white {
+  color: #fff; }
+.content.splash .chev-circle {
+  color: #026D8C; }
+  .content.splash .chev-circle:hover {
+    color: #A5D3E0; }
 
 .content.pamps {
   text-align: center;

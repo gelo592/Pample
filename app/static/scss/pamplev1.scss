@@ -87,6 +87,27 @@
     //-ms-animation: star-wiggle 2s;
     //animation: star-wiggle 2s;
   }
+
+  .real-fo .col-sm-12:nth-child(2n+1) {
+    background-color: #A5D3E0;
+  }
+
+  .chev-hook {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .chev-white {
+    color: #fff;
+  }
+
+  .chev-circle {
+    color: #026D8C;
+
+    &:hover {
+      color: #A5D3E0;
+    }
+  }
 }
 
 .content.pamps {
@@ -103,6 +124,9 @@
   }
 
 }
+
+
+
 .footer {
   width: 100%;
   position: absolute;

@@ -187,7 +187,7 @@ ipaPracticizer = {
     'hint' : 'hɪnt',
     'no' : 'noʊ',
     'tin' : 'tɪn',
-    'ringer': 'rɪŋɚ',
+    'ringer': 'ɹɪŋɚ',
     'sing' : 'sɪŋ',
     'finger' : 'fɪŋɡɚ',
     'drink' : 'dɹɪŋk',
@@ -374,6 +374,12 @@ ipaPracticizer = {
         e.preventDefault();
         ipaPracticizer.appendLetter('ɹ');
         break;
+      case 83: // s
+        if(e.ctrlKey) {
+          e.preventDefault();
+          ipaPracticizer.appendLetter('ʃ');
+        }
+        break;
       case 84: // t
         if(e.ctrlKey) {
           e.preventDefault();
@@ -405,6 +411,8 @@ ipaPracticizer = {
 
       $(".success").show();
       setTimeout(function(){ $(".success").hide(); }, 2500);
+
+      $(".ipa-box").val("");
 
       ipaPracticizer.loadWord(newWord);
     }

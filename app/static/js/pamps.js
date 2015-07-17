@@ -2,7 +2,7 @@ $(function() {
   var pample = pample || {};
 
   $.ajax({
-    url: "/api/level?level=0"
+    url: "/api/level?level=1"
   })
   .done(function(data) {
     border = 20;
@@ -85,10 +85,10 @@ $(function() {
 
       redraw: function(){
         // draw fill rect to clear out old map
-        context.fillStyle = "#454545";
+        context.fillStyle = "#FFF";
         context.fillRect(0, 0, canvas.width, canvas.height);
-        this.drawMap();
-        this.drawPlayer();
+        //this.drawMap();
+        //this.drawPlayer();
       },
 
       // draw the map tiles, objects, and character
@@ -98,7 +98,8 @@ $(function() {
             this.drawTile(j, i);
             var objIndex = this.objTileMap[j + this.mapDimensions.xOffset][i + this.mapDimensions.yOffset];
             if(objIndex >= 0) {
-              console.log("x ", j, " y ", i)
+              console.log("x ", j, " y ", i, "obj ind", objIndex)
+              console.log(this.objectArray);
               this.drawObject(this.objectArray[objIndex], j, i);
             }
           }
@@ -354,7 +355,7 @@ $(function() {
             break;
         }
         bubble.setAttribute("class", "speech-bubble");
-        $('#content').append(bubble);
+        $('.content').append(bubble);
         $('.speech-bubble').css('top', (indeY * (this.tileHeight / 2) + 7)+ 'px');
         $('.speech-bubble').css('left', (indeX * this.tileWidth + this.tileWidth + 10) + 'px');
       },
