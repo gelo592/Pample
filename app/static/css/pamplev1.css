@@ -1,28 +1,68 @@
 #footer {
   text-align: right;
   padding-right: 20px;
-  position: absolute;
-  bottom: 10px;
-  right: 20px; }
+  position: relative;
+  margin-top: 20px; }
 
+@font-face {
+  font-family: "Cash Money";
+  src: url("../fonts/CashCurrency.ttf") format("truetype"); }
+@font-face {
+  font-family: "Iron Price";
+  src: url("../fonts/Iron&Brine.ttf") format("truetype"); }
+@font-face {
+  font-family: "Prestige";
+  src: url("/static/fonts/PrestigeEliteStd-Bd.otf") format("truetype"); }
 .content.splash .kerpany-logo img {
   margin-left: -341px;
   padding-left: 50%;
   height: 208px; }
+.content.splash .kermp-logo {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Cash Money";
+  color: #026e8d;
+  line-height: 100px;
+  margin-top: 36px; }
+.content.splash .kermp-logo-presents {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Iron Price";
+  color: #026e8d;
+  line-height: 50px;
+  margin-top: -10px; }
+.content.splash .adventure-txt {
+  line-height: 52px;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Prestige";
+  padding-right: 79.125px; }
 .content.splash .alien-boy {
   height: 440px; }
 .content.splash .center-row {
   text-align: center; }
 .content.splash .alien-adventures-txt {
   margin-top: 30px;
-  margin-bottom: 50px; }
+  margin-bottom: 20px;
+  text-align: center; }
 .content.splash .alien-adventures-txt img {
   width: 300px; }
 .content.splash .center-row.row.mc {
   margin-left: -200px;
   padding-left: 50%; }
-.content.splash .mc #mc_embed_signup .mc-field-group input {
-  width: 400px; }
+.content.splash .mc {
+  padding-right: 79.125px; }
+  .content.splash .mc #mc_embed_signup_scroll {
+    text-align: center; }
+  .content.splash .mc #mc_embed_signup .mc-field-group input {
+    border-radius: 4px; }
+  .content.splash .mc #mc_embed_signup div.mce_inline_error {
+    background-color: #E54646;
+    border-radius: 4px; }
+  .content.splash .mc #mc_embed_signup input.mce_inline_error {
+    border-color: #E54646; }
+    .content.splash .mc #mc_embed_signup input.mce_inline_error:focus {
+      outline-color: #f9cbcb; }
 .content.splash .btn-image {
   background-repeat: no-repeat;
   background-position: left top;
@@ -34,9 +74,9 @@
   outline: 0;
   color: transparent; }
 .content.splash #btn-add {
-  background-image: url(/static/img/alien-boy-add.png); }
+  background-image: url("/static/img/alien-boy-add.png"); }
 .content.splash #btn-login {
-  background-image: url(/static/img/login.png); }
+  background-image: url("/static/img/login.png"); }
 .content.splash .secret-login {
   position: absolute;
   top: 20px;
@@ -54,11 +94,14 @@
 .content.splash .secret-login:hover {
   -webkit-transform-origin: 50% 50%;
   -webkit-animation: star-wiggle 2s; }
-.content.splash .real-fo .col-sm-12:nth-child(2n+1) {
-  background-color: #A5D3E0; }
+.content.splash .real-fo:nth-child(2n+1) {
+  background-color: #e7e7e7; }
+.content.splash .real-fo {
+  padding: 40px 0 40px; }
 .content.splash .chev-hook {
   text-align: center;
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 20px; }
 .content.splash .chev-white {
   color: #fff; }
 .content.splash .chev-circle {
