@@ -7,9 +7,10 @@ from ..api.api import getUser, getLevel
 @login_required
 @app.route('/pamps')
 def pamps():
-  user = getUser(current_user.id)
+  return "how'd you get this url?! pample isn't ready yet. come back soon!"
+  """ user = getUser(current_user.id)
   level = user["currentLevel"]
-  return render_template("pamps.html", level=level, user ="GeeEee")
+  return render_template("pamps.html", level=level, user ="GeeEee")"""
 
 #need to verify it's the right user
 @login_required
