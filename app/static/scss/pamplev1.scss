@@ -1,16 +1,57 @@
 #footer {
   text-align: right;
   padding-right: 20px;
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
+  position: relative;
+  margin-top: 20px;
 }
 
-.content.splash{
-  .kerpany-logo img{
+@font-face {
+  font-family: "Cash Money";
+  src: url("../fonts/CashCurrency.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Iron Price";
+  src: url("../fonts/Iron&Brine.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Prestige";
+  src: url("/static/fonts/PrestigeEliteStd-Bd.otf") format('truetype');
+}
+
+.content.splash {
+  .kerpany-logo img {
     margin-left: -341px;
     padding-left: 50%;
     height: 208px;
+  }
+
+  .kermp-logo {
+    text-align: center;
+    font-size: 100px;
+    font-family: "Cash Money";
+    color: rgb(2, 110, 141);
+    line-height: 100px;
+    margin-top: 36px;
+  }
+
+  .kermp-logo-presents {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Iron Price";
+    color: rgb(2, 110, 141);
+    line-height: 50px;
+    margin-top: -10px;
+  }
+
+  .adventure-txt {
+    line-height: 52px;
+    text-align: center;
+    font-size: 45px;
+    font-family: "Prestige";
+    //width: 376px;
+    padding-right: 79.125px;
   }
 
   .alien-boy {
@@ -22,10 +63,11 @@
 
   .alien-adventures-txt {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  .alien-adventures-txt img{
+  .alien-adventures-txt img {
     width: 300px;
     //transform: rotate(-15deg);
   }
@@ -35,8 +77,26 @@
     padding-left: 50%;
   }
 
-  .mc #mc_embed_signup .mc-field-group input {
-    width: 400px;
+  .mc {
+    padding-right: 79.125px;
+    #mc_embed_signup_scroll {
+      text-align: center;
+    }
+    #mc_embed_signup .mc-field-group input {
+      border-radius: 4px;
+    }
+
+    #mc_embed_signup div.mce_inline_error {
+      background-color: #E54646;
+      border-radius: 4px;
+    }
+
+    #mc_embed_signup input.mce_inline_error {
+      border-color: #E54646;
+      &:focus {
+        outline-color: rgb(249, 203, 203);
+      }
+    }
   }
 
 
@@ -53,11 +113,11 @@
   }
 
   #btn-add {
-    background-image: url(/static/img/alien-boy-add.png);
+    background-image: url("/static/img/alien-boy-add.png");
   }
 
   #btn-login {
-    background-image: url(/static/img/login.png)
+    background-image: url("/static/img/login.png");
   }
 
   .secret-login {
@@ -87,6 +147,32 @@
     //-ms-animation: star-wiggle 2s;
     //animation: star-wiggle 2s;
   }
+
+  .real-fo:nth-child(2n+1) {
+    background-color: #e7e7e7;
+  }
+
+  .real-fo {
+    padding: 40px 0 40px;
+  }
+
+  .chev-hook {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .chev-white {
+    color: #fff;
+  }
+
+  .chev-circle {
+    color: #026D8C;
+
+    &:hover {
+      color: #A5D3E0;
+    }
+  }
 }
 
 .content.pamps {
@@ -103,6 +189,9 @@
   }
 
 }
+
+
+
 .footer {
   width: 100%;
   position: absolute;
