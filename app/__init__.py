@@ -101,6 +101,10 @@ def blarg():
 def moneymoneymoney():
   return render_template("moneymoneymoney.html")
 
+@app.route('/the_gang')
+def thegang():
+  return render_template("thegang.html")
+
 RDB_HOST = 'localhost'
 RDB_PORT = 28015
 RDB_DB = 'pample'

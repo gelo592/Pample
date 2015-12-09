@@ -1,0 +1,70 @@
+.content.thegang {
+  margin: 20px 0px;
+  text-align: center; }
+  .content.thegang .gangtitle {
+    font-family: "Cash Money";
+    color: #026e8d;
+    font-size: 100px; }
+  .content.thegang .pamplite {
+    width: 270px;
+    margin: 20px;
+    display: inline-block; }
+    .content.thegang .pamplite .name {
+      font-family: "Iron Price";
+      color: #026e8d;
+      font-size: 38px; }
+    .content.thegang .pamplite img {
+      width: 100%;
+      vertical-align: bottom; }
+    .content.thegang .pamplite:hover {
+      cursor: pointer; }
+  .content.thegang .pamp-well {
+    position: relative;
+    padding: 60px 320px;
+    color: #026e8d;
+    background-color: #F7F7F7;
+    border-color: #d3d3d3;
+    font: 600 22px/38px "freight-sans-pro", Helvetica, Arial, sans-serif; }
+    .content.thegang .pamp-well p:first-letter {
+      float: left;
+      font-family: "Cash Money";
+      font-weight: normal;
+      font-size: 86px;
+      line-height: 70px;
+      padding-right: 8px; }
+    .content.thegang .pamp-well p {
+      text-align: left; }
+  .content.thegang .pamp-caret {
+    position: relative; }
+  .content.thegang .pamp-caret::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 14px solid #f7f7f7;
+    bottom: -23px;
+    left: 122px;
+    z-index: 10; }
+  .content.thegang .pamp-caret::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 14px solid #d3d3d3;
+    bottom: -21px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+    left: 122px;
+    z-index: 10; }
+  .content.thegang .story {
+    position: absolute;
+    top: 100px; }
+  .content.thegang .story-left {
+    left: 140px; }
+  .content.thegang .story-right {
+    right: 140px; }
+
+/*# sourceMappingURL=gang.css.map */

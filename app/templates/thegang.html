@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+    {% block styles %}
+      <link rel="stylesheet" href="static/css/gang.css" type="text/css" />
+    {% endblock %}
+{% block content %}
+  <div class="content thegang">
+    <div class="gangtitle">The Gang</div>
+    <div>
+      <div class="pamplite" data-well="jake-well">
+        <div class="name">jeiku</div>
+        <img src="static/img/jaku.png" />
+        <div class="pamp-caret hidden"></div>
+      </div>
+      <div class="pamplite" data-well="jango-well">
+        <div class="name">jango</div>
+        <img src="static/img/jango.png" />
+        <div class="pamp-caret hidden"></div>
+      </div>
+      <div class="pamplite" data-well="cha-well">
+        <div class="name">cha chan</div>
+        <img src="static/img/chachan.png" />
+        <div class="pamp-caret hidden"></div>
+      </div>
+      <a class="blurb-click" id="blurb-well-1-click" role="button" data-toggle="collapse" href="#blurb-well-1" aria-expanded="false" aria-controls="blurb-well-1">
+        mo info
+      </a>
+    </div>
+    <div class="collapse jake-well" id="blurb-well-1">
+      <div class="well pamp-well" id="jake-well">
+        <p>
+          jeiku san once spoke to the universe and it said "i'm the universe just suck on that for a second." he did not balk as many in his place might have. he did as commanded and was emblazoned with a strip of red hawk along his skull and swathed with pants crafted from his very own piece of the milkyway.
+        </p>
+      </div>
+      <div class="well pamp-well hidden" id="jango-well">
+        <p>
+        jango mango tango is the worlds finest gummy aficionado. he has compared samples from across the globe and has the most trusted palate since mr haribo himself. in the event of an extraterrestrial gummy encounter, jango is the deciding force in allowing aliens into the galactic gummy academy.
+        </p>
+      </div>
+      <div class="well pamp-well hidden" id="cha-well">
+        <p>
+        cha chan is the epitome of class. she exudes fanciness and radiates elegance. as she enters a room doors swing open ahead of her, as she walks in the rain coats swoop down to cover puddles. for fear that her come hither gaze would be too strong she is never seen without sunglasses only further adding to her mystique.
+        </p>
+      </div>
+    </div>
+    <div id="blurb-well-1-scroll"></div>
+    <div>
+      <div class="pamplite" data-well="jaff-well">
+        <div class="name">jaffa</div>
+        <img src="static/img/jaffa.png" />
+        <div class="pamp-caret hidden"></div>
+      </div>
+      <div class="pamplite" data-well="kurt-well">
+        <div class="name">kurty kurt</div>
+        <img src="static/img/coity.png" />
+        <div class="pamp-caret hidden"></div>
+      </div>
+      <div class="pamplite" data-well="lisa-well">
+        <div class="name">leesah</div>
+        <img src="static/img/lisa.png" />
+        <div class="pamp-caret hidden"></div>
+        <audio id="audio" src="static/sound/TearingMeApartLisa.mp3" ></audio>
+      </div>
+      <a class="blurb-click" id="blurb-well-2-click" role="button" data-toggle="collapse" href="#blurb-well-2" aria-expanded="false" aria-controls="blurb-well-2">
+        mo info
+      </a>
+    </div>
+    <div class="collapse" id="blurb-well-2">
+      <div class="well pamp-well" id="jaff-well">
+        <p> jaffa isn't one for mediocrity. he's an all or nothing kind of guy. why have a sampling of gelato when you can tour italy to try every flavor? Why drink tropicana when you can have fresh squeezed morrocan OJ? just ask jaffa he'll tell you why.</p>
+      </div>
+      <div class="well pamp-well hidden" id="kurt-well">
+        <p>kurty kurt wasn't always a runner, but as his muscles stretched and strengthened into a mean running machine so too did his mutton chops grow. and it was lucky they did because on a long run it's convenient to have a place to store some water and a snack.</p>
+      </div>
+      <div class="well pamp-well hidden" id="lisa-well">
+        <p> warning. badass bitch. gives no fucks. wont take shit from anyone. approach with caution. be ready to take on an onslaught of blunt truths and real talk. would fight a bear for you, but has a strangely soft side. has been known to pick up stray cats and humans. </p>
+      </div>
+    </div>
+    <div id="blurb-well-2-scroll"></div>
+    <div>
+      <div class="pamplite" data-well="tye-well">
+        <div class="name">tyler</div>
+        <img src="static/img/taylor.png" />
+        <div class="pamp-caret hidden"></div>
+      </div>
+      <div class="pamplite" data-well="luke-well">
+        <div class="name">larkas</div>
+        <img src="static/img/larkas.png" />
+        <div class="pamp-caret hidden"></div>
+      </div>
+      <a class="blurb-click" id="blurb-well-3-click" role="button" data-toggle="collapse" href="#blurb-well-3" aria-expanded="false" aria-controls="blurb-well-3">
+        mo info
+      </a>
+    </div>
+    <div class="collapse" id="blurb-well-3">
+      <div class="well pamp-well" id="tye-well">
+      <p>tyler is organically grown and organically raised, but he is not of this world. he comes from a land where culture dictates the sharing of elevator eggs, the burning of backpacks, and one stranger in every group photograph. he is a warrior of the new era.</p>
+      </div>
+      <div class="well pamp-well hidden" id="luke-well"><p>
+        larkas is a man of mystery. his beard the most elusive chin warmer imaginable. the moment you look him in the face his beard morphs and your memory is erased. it's impossible to know the form his beard holds and keep your sanity.</p>
+      </div>
+    </div>
+    <div id="blurb-well-3-scroll"></div>
+  </div>
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript" src="static/js/gang.js"></script>
+{% endblock %}
