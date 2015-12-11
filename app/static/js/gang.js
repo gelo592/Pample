@@ -28,12 +28,11 @@
         $(e.currentTarget).children(".pamp-caret").removeClass("hidden");
         // show this blurb
         $("#"+well).removeClass("hidden");
-
-        if(well === "lisa-well") {
-          var audio = document.getElementById("audio");
-          audio.play();
-        }
       }
+    }
+    if(well === "lisa-well") {
+      var audio = document.getElementById("audio");
+      audio.play();
     }
   }
 
