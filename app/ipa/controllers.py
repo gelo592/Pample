@@ -5,7 +5,7 @@ from flask import render_template
 import requests
 
 
-@app.route('/ipa')
+@app.route('/eye-pee-eh')
 def learnIPA():
   print "im heare"
   return render_template("ipa-learnorator/ipa-base.html")
