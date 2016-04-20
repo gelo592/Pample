@@ -105,6 +105,10 @@ def moneymoneymoney():
 def thegang():
   return render_template("thegang.html")
 
+@app.route('/savethelark')
+def savelarkas():
+  return render_template("larkas.html")
+
 RDB_HOST = 'localhost'
 RDB_PORT = 28015
 RDB_DB = 'pample'
