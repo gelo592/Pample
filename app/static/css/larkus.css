@@ -1,0 +1,21 @@
+body {
+  background: url("../images/larkas-alpha.png") no-repeat center center fixed;
+}
+
+.lark-box {
+  background-color: rgba(255,255,255,.7);
+  height: 100vh;
+  text-align: center;
+}
+
+.lark-box p {
+  padding: 0 40px 10px 40px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.slimage {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  width: 90%;
+}
