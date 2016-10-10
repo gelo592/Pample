@@ -6,6 +6,20 @@
 {% block content %}
   <div class="content pamps">
     <canvas id="game"></canvas>
+    <div class="dialog">
+      <div class="dialog-content">
+        <a><i class="fa fa-close ex"></i></a>
+        <input class="talkbox" id="talkbox" type="text" />
+        <div class="speech-chunk">
+          <div class="spriticon-left"></div>
+          <div class="speech-bubble">hi this is a speech bubble</div>
+        </div>
+        <div class="speech-chunk">
+          <div class="spriticon-right"></div>
+          <div class="speech-bubble-rev">a different bubble</div>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock %}
 {% block footer %}
@@ -19,7 +33,7 @@
       </ul>
     </div>
     <div class="dashy-input">
-      <input id="talkbox" type="text" />
+    <input id="main-input" />
     </div>
     <div class="dashy-settings">
       <ul>

@@ -85,10 +85,10 @@ $(function() {
 
       redraw: function(){
         // draw fill rect to clear out old map
-        context.fillStyle = "#FFF";
+        context.fillStyle = "#323744";
         context.fillRect(0, 0, canvas.width, canvas.height);
-        //this.drawMap();
-        //this.drawPlayer();
+        this.drawMap();
+        this.drawPlayer();
       },
 
       // draw the map tiles, objects, and character
@@ -98,8 +98,6 @@ $(function() {
             this.drawTile(j, i);
             var objIndex = this.objTileMap[j + this.mapDimensions.xOffset][i + this.mapDimensions.yOffset];
             if(objIndex >= 0) {
-              console.log("x ", j, " y ", i, "obj ind", objIndex)
-              console.log(this.objectArray);
               this.drawObject(this.objectArray[objIndex], j, i);
             }
           }
@@ -126,6 +124,7 @@ $(function() {
       // draw npc and map objects
       drawObject: function(obj, x, y) {
         var spriteMap = obj.type === "person" ? this.peopleMapSprites : this.objectMapSprites;
+        console.log(obj);
         var sourceImageCoords = spriteMap[obj.spriteMapOffset];
         this.drawSprite(
           this.sprite,
@@ -216,7 +215,6 @@ $(function() {
           40: centerTile.y + (centerTile.y/2)  // down town
         };
         var collision = false;
-        console.log(this.player);
         switch(keycode) {
           case 37:
             if(this.player.x <= 0) { // player at horizontal edge of map
@@ -287,7 +285,6 @@ $(function() {
               indeY = this.player.y;
             }
             else {
-              console.log(this.player.x, this.mapDimensions.movementAreaRight, this.moMap.right);
               if(this.player.x > this.mapDimensions.movementAreaRight && this.moMap.right) {
                 this.mapDimensions.xOffset++;
                 this.player.globalX++;
@@ -400,19 +397,41 @@ $(function() {
         pample.gameBoard.move(e.keyCode);
       }
       else {
-        console.log("other command used");
+        //console.log("other command used");
+      }
+    },
+
+    textCommand: function(e) {
+      var commandKeyMap = {
+        "move left": 37,
+        "left": 37,
+        "move up": 38,
+        "up": 38,
+        "move right": 39,
+        "right": 39,
+        "move down":  40,
+        "down":  40
+      };
+      console.log(e.keyCode);
+      if(e.keyCode == 13) {
+        var command = $("#main-input").val().toLowerCase();
+
+        if(commandKeyMap[command]) pample.gameBoard.move(commandKeyMap[command]);
       }
     },
 
     buildObjTileMap: function(objArr, mapWidth, mapHeight) {
       var objTileMap = [];
+
+      // fill the obj map with neggies
       for(var i=0; i < mapWidth; i++) {
         objTileMap[i] = [];
         for(var j=0; j < mapHeight; j++) {
           objTileMap[i][j] = -1;
         }
       }
-      console.log(objTileMap);
+
+      // fill object (x,y) spots with index in obj array
       for(var k=0; k < objArr.length; k++) {
         var x = objArr[k].mapX;
         var y = objArr[k].mapY;
@@ -424,4 +443,5 @@ $(function() {
 
   $(window).resize(pample.util.resizeCanvas);
   $(window).keydown(pample.util.keydown);
+  $("#main-input").keypress(pample.util.textCommand);
 });

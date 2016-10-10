@@ -177,17 +177,91 @@
 
 .content.pamps {
   text-align: center;
-  background: #454545;
+  background: #323744;
 
-  .speech-bubble {
-    z-index: 10;
+
+  .dialog {
+    display: none;
+    width: 385px;
+    height: 60%;
     position: absolute;
-    border-image-source: url('../img/SpeechBubble.png');
-    border-image-slice: 14 19 23 21 fill;
-    border-width: 8px;
-    width: 120px;
+    top: 15%;
+    left: 35%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1em grey;
+    background-color: #F5F5F5;
   }
 
+  .dialog-content {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+
+    .ex {
+      position: absolute;
+      top: 4px;
+      left: 6px;
+    }
+
+    .talkbox {
+      position: absolute;
+      bottom: 0px;
+      left: -1px;
+      width: 387px;
+      height: 32px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: none;
+      border-top: 1px solid #D2D2C8;
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+
+    .speech-chunk {
+      position: relative;
+      display: block;
+      height: 60px;
+      padding-top: 20px;
+      .speech-bubble {
+        position: absolute;
+        border-image-source: url('../img/SpeechBubble.png');
+        border-image-slice: 14 19 23 21 fill;
+        border-width: 8px;
+        left: 48px;
+      }
+
+      .speech-bubble-rev {
+        position: absolute;
+        border-image-source: url('../img/SpeechBubble-rev.png');
+        border-image-slice: 14 19 23 21 fill;
+        border-width: 8px;
+        right: 48px;
+      }
+
+      .spriticon-left {
+        background-image: url("../img/oracle.png");
+        display: block;
+        position: absolute;
+        left: 20px;
+        width: 28px;
+        height: 48px;
+      }
+      .spriticon-right {
+        background-image: url("../img/oracle.png");
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 48px;
+        right: 20px;
+      }
+    }
+  }
 }
 
 
@@ -196,8 +270,8 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: #454545;
-  border: solid 12px #454545;
+  background-color: #323744;
+  border: solid 12px #323744;
   color: #eee;
 
   ul {
@@ -209,20 +283,27 @@
   }
 
   .dashy-info {
-    width: 250px;
+    width: 33%;
     display: inline-block;
+
   }
 
   .dashy-input {
-    display: inline;
+    width: 33%;
+    text-align: center;
+    display: inline-block;
     input {
-      color: #333;
       width: 400px;
+      text-align: left;
+      color: #222;
     }
   }
 
   .dashy-settings {
+    width: 33%;
     display: inline-block;
+    text-align: right;
+    padding-right: 40px;
   }
 }
 
@@ -267,10 +348,10 @@
     &.full {
       background-image: url('../img/star-full.png');
     }*/
-      position: absolute;
-  top: -58px;
-  right: -75px;
-  height: 120px;
+    position: absolute;
+    top: -58px;
+    right: -75px;
+    height: 120px;
   }
 
   .progress {
@@ -283,3 +364,5 @@
     border-color: #a92c52;
   }
 }
+
+

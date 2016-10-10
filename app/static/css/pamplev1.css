@@ -111,36 +111,99 @@
 
 .content.pamps {
   text-align: center;
-  background: #454545; }
-  .content.pamps .speech-bubble {
-    z-index: 10;
+  background: #323744; }
+  .content.pamps .dialog {
+    display: none;
+    width: 385px;
+    height: 60%;
     position: absolute;
-    border-image-source: url("../img/SpeechBubble.png");
-    border-image-slice: 14 19 23 21 fill;
-    border-width: 8px;
-    width: 120px; }
+    top: 15%;
+    left: 35%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1em grey;
+    background-color: #F5F5F5; }
+  .content.pamps .dialog-content {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll; }
+    .content.pamps .dialog-content .ex {
+      position: absolute;
+      top: 4px;
+      left: 6px; }
+    .content.pamps .dialog-content .talkbox {
+      position: absolute;
+      bottom: 0px;
+      left: -1px;
+      width: 387px;
+      height: 32px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: none;
+      border-top: 1px solid #D2D2C8; }
+      .content.pamps .dialog-content .talkbox:focus {
+        outline: none; }
+    .content.pamps .dialog-content .speech-chunk {
+      position: relative;
+      display: block;
+      height: 60px;
+      padding-top: 20px; }
+      .content.pamps .dialog-content .speech-chunk .speech-bubble {
+        position: absolute;
+        border-image-source: url("../img/SpeechBubble.png");
+        border-image-slice: 14 19 23 21 fill;
+        border-width: 8px;
+        left: 48px; }
+      .content.pamps .dialog-content .speech-chunk .speech-bubble-rev {
+        position: absolute;
+        border-image-source: url("../img/SpeechBubble-rev.png");
+        border-image-slice: 14 19 23 21 fill;
+        border-width: 8px;
+        right: 48px; }
+      .content.pamps .dialog-content .speech-chunk .spriticon-left {
+        background-image: url("../img/oracle.png");
+        display: block;
+        position: absolute;
+        left: 20px;
+        width: 28px;
+        height: 48px; }
+      .content.pamps .dialog-content .speech-chunk .spriticon-right {
+        background-image: url("../img/oracle.png");
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 48px;
+        right: 20px; }
 
 .footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: #454545;
-  border: solid 12px #454545;
+  background-color: #323744;
+  border: solid 12px #323744;
   color: #eee; }
   .footer ul {
     list-style: none; }
     .footer ul li {
       display: inline-block; }
   .footer .dashy-info {
-    width: 250px;
+    width: 33%;
     display: inline-block; }
   .footer .dashy-input {
-    display: inline; }
-    .footer .dashy-input input {
-      color: #333;
-      width: 400px; }
-  .footer .dashy-settings {
+    width: 33%;
+    text-align: center;
     display: inline-block; }
+    .footer .dashy-input input {
+      width: 400px;
+      text-align: left;
+      color: #222; }
+  .footer .dashy-settings {
+    width: 33%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 40px; }
 
 .content.money .page-heading {
   text-align: center; }

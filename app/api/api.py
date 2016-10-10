@@ -6,8 +6,8 @@ import unicodedata
 def getUser(user_id):
   return r.db('pample').table('users').get(user_id).run(g.conn)
 
-@login_required
 @app.route('/api/level')
+@login_required
 def getLevel():
   print "rawwwwrarwrwarwawrawrrrrrrr"
   level_id = request.args.get('level')
